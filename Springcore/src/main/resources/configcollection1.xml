@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    
+    <bean name="ans1" class="com.spring.collection1.Answer">
+        <constructor-arg value="1"/>
+        <constructor-arg value="Java is a Programming languages"/>
+        <constructor-arg value="john gowsling"/>
+      </bean>
+      
+      <bean name="ans2" class="com.spring.collection1.Answer">
+          <constructor-arg value="2"/>
+          <constructor-arg value="Java is Platform Independent"/>
+          <constructor-arg value="Himanshu"/>
+
+      </bean>
+      
+      <bean name="qst" class="com.spring.collection1.Question">
+       <constructor-arg value="11"/>
+       <constructor-arg value="What is Java"/>
+       
+       <constructor-arg>
+           <list>
+               <ref bean="ans1"/>
+               <ref bean="ans2"/>
+           </list>
+       </constructor-arg>
+            
+      </bean>
+
+</beans>

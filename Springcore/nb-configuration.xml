@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-shared-configuration>
+    <!--
+This file contains additional configuration written by modules in the NetBeans IDE.
+The configuration is intended to be shared among all the users of project and
+therefore it is assumed to be part of version control checkout.
+Without this configuration present, some functionality in the IDE may be limited or fail altogether.
+-->
+    <spring-data xmlns="http://www.netbeans.org/ns/spring-data/1">
+        <config-files>
+            <config-file>newSpringXMLConfig.xml</config-file>
+            <config-file>src/main/resources/configstudent.xml</config-file>
+            <config-file>src/main/resources/configconstructor.xml</config-file>
+            <config-file>src/main/resources/configconstr.xml</config-file>
+            <config-file>src/main/resources/configlifecycle.xml</config-file>
+            <config-file>src/main/resources/configautowiring.xml</config-file>
+            <config-file>src/main/resources/configstandlone.xml</config-file>
+            <config-file>src/main/resources/configalonestand.xml</config-file>
+            <config-file>src/main/resources/configstereotype.xml</config-file>
+            <config-file>src/main/resources/configspringscope.xml</config-file>
+            <config-file>src/main/resources/configemployeejdbc.xml</config-file>
+        </config-files>
+        <config-file-groups/>
+    </spring-data>
+</project-shared-configuration>

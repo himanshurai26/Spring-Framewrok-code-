@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    
+    <bean class="com.spring.constr.certi" name="cr">
+        
+        <constructor-arg value="Nascom certificate"/>
+    </bean>
+    
+    <bean class="com.spring.constr.Person1" name="pr">
+        
+        <constructor-arg value="45"/>
+        <constructor-arg value="Himanshu Kumar"/>
+        <constructor-arg value="delhi"/>
+        <constructor-arg ref="cr"/>
+        
+        
+    </bean>
+    
+    <bean class="com.spring.constr.Adition" name="ad">
+        <constructor-arg value="12" type="int" index="1" />
+        <constructor-arg value="56" type="int" index="0"/>
+            
+              
+        
+    </bean>
+
+</beans>

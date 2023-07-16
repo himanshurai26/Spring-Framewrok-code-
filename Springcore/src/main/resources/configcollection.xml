@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    
+    <bean name="emp" class="com.springcore.collection.Employee">
+        <property name="name"  value="Rohit"/>
+        
+        <property name="phones">
+            <list>
+                <value>6204093287</value>
+                <value>9576068295</value>
+                <value>4837295933</value>
+            </list>
+            
+        </property>
+        
+        <property name="addresses">
+            <set>
+                <value>Delhi</value>
+                <value>Bihar</value>
+                <value>New Delhi</value>
+                <value>UP</value>
+            </set>
+            
+        </property>
+        
+        <property name="courses">
+            <map>
+               <entry key="java" value="2month"/>
+               <entry key="pythan" value="4month"/>
+               <entry key="php" value="3month"/>
+               <entry key="sql" value="5month"/>
+            </map>
+        </property>
+    </bean>
+    
+    <!--  Date 28-9=06-2023 -->
+    
+    <bean name="qst" class="com.springcore.collection.Question">
+        <constructor-arg value="122"/>
+           
+        
+        <constructor-arg value="what is Java?"/>
+        
+        <constructor-arg>
+            <list>
+                <value>Java is programming language</value>
+                <value>Java is plateform </value>
+                <value>Java is an Island of Indonasia</value>
+                    
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

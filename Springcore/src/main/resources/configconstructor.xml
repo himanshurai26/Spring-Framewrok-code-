@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    
+    <bean class="com.springcore.constructorInjection.Person" name="person">
+        <constructor-arg value="Himanshu Kumar"/>
+           <!-- <value>Himanshu Kumar</value>    
+        </constructor-arg> -->
+        <constructor-args value="56" type="int"/>
+           <!-- <value>545</value>
+        </constructor-args>-->
+     
+        
+    </bean>
+
+</beans>
