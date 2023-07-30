@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<%@ page isELIgnored="false" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Success Page</title>
+</head>
+<body>
+
+	<h1>This is Success Page</h1>
+	<%-- <%
+	String email = (String)request.getAttribute("email");
+	String name = (String)request.getAttribute("name");
+	 String password = (String)request.getAttribute("password");
+	;
+	%>
+	
+	<h2>Welcome  : <%=name %></h2>
+	<h2>My Email id is = <%=email %></h2>
+	<h2>My UserPassword is = <%= password %></h2> --%>
+	<h2>Welcome =  ${user.username }</h2>
+	<h2>Email id  is = ${user.email }</h2>
+	<h2>Password is = ${user.userpassword }</h2>
+</body>
+</html>

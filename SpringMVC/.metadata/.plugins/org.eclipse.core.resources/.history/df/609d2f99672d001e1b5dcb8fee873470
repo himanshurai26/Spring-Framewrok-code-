@@ -1,0 +1,15 @@
+package springmvcsearch;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class FormController {
+
+	@RequestMapping("/complex")
+	public String form()
+	{
+		System.out.println("this is complex form....");
+		return "complex-form";
+	}
+}

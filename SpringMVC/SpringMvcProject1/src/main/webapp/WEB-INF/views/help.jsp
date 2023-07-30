@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page isELIgnored="false" %>
+    <%@ page import="java.time.LocalDateTime" %>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Help Page</title>
+</head>
+<body>
+<h1>Learning the concept of ModelAnd View in Spring MVC </h1>
+ <h1>This is Help Page</h1>
+ 
+ <h5>**********************************************</h5>
+ <%-- <%
+ 
+     String name =(String) request.getAttribute("name");
+      Integer id =(Integer) request.getAttribute("id");
+         String email = (String) request.getAttribute("email");
+     LocalDateTime  time = (LocalDateTime)request.getAttribute("time");
+ 
+ %> --%>
+ 
+ <h2>My Name is = ${name} <%-- <%= name %> --%> </h2>
+ 
+ <h2>My Roll Number is = ${id} <%-- <%= id %> --%> </h2>
+ 
+ <h3>My Email id is = ${email} <%-- <%=email %> --%></h3>
+ 
+ <h3>Date and Time is =  ${time}<%-- <%=time %> --%></h3>
+ 
+ <hr>
+ 
+
+<c:forEach var="item" items="${marks }"> 
+<h1>${item}</h1>
+</c:forEach>
+ 
+ 
+</body>
+</html>

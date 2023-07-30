@@ -1,0 +1,21 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController {
+
+	@RequestMapping("/hello")
+	public String redirect()
+	{
+		System.out.println("This is View Page url ");
+		return "viewpage";
+	}
+	
+	@RequestMapping("/success")
+	public String display()
+	{
+		return "success";
+	}
+}

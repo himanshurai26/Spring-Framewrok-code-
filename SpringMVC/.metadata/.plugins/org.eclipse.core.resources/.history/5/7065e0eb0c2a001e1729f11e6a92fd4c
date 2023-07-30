@@ -1,0 +1,32 @@
+package model;
+
+public class User {
+    private String email;
+    private String username;
+    private String userpassword;
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getUserName() {
+		return username;
+	}
+	public void setUserName(String userName) {
+		this.username = userName;
+	}
+	public String getUserPassword() {
+		return userpassword;
+	}
+	public void setUserPassword(String userPassword) {
+		this.userpassword = userPassword;
+	}
+	@Override
+	public String toString() {
+		return "User [email=" + email + ", userName=" + username + ", userPassword=" + userpassword + "]";
+	}
+    
+	
+    
+}

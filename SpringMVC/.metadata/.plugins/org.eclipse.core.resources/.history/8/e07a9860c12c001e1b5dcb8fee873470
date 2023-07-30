@@ -1,0 +1,11 @@
+package springmvc.Dao;
+
+public class UserDao {
+	private HibernateTemplate hibernateTemplate;
+	
+	public int saveUser(User user)
+	{
+		
+	}
+
+}

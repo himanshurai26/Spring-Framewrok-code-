@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body{
+	background-color: red !important;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Make the image circular */
+img {
+  border-radius: 50%;
+}

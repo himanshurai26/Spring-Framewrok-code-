@@ -1,0 +1,18 @@
+package springmvcsearch;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class FileUploadController {
+
+	
+	@RequestMapping("/file")
+	public String fileUpload()
+	{
+		
+		System.out.println("This is file uploading Page");
+		return "fileForm";
+	}
+}

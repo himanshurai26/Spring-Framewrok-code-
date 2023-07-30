@@ -1,0 +1,5 @@
+package springmvcsearch.enties;
+
+public class Student {
+
+}

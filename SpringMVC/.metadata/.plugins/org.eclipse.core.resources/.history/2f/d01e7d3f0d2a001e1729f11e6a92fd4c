@@ -1,0 +1,78 @@
+package controler;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import model.User;
+
+@Controller
+public class ContactController { //sending data from view to controller class
+	@RequestMapping("/contact")
+	public String showForm() // this is handler class
+	{
+		return "contact";
+	}
+
+	/*
+	 * @RequestMapping(path ="/processform", method=RequestMethod.POST) public
+	 *  public String handleForm(Servlet method HttpServletRequest request ) { // this is
+	 * servlet method
+	 * 
+	 * String email = request.getParameter("email"); 
+	 * String username = request.getParameter("username"); 
+	 * String userpassword = request.getParameter("userpassword");
+	 * 
+	 * System.out.println("userEmail is = " + email);
+	 * System.out.println("UserName is = " + username);
+	 * System.out.println("UserPassword is = " + userpassword);
+	 * 
+	 * 
+	 * 
+	 * return ""; }
+	 */
+	
+	@RequestMapping(path="/processform", method=RequestMethod.POST)
+	public String handleForm(@RequestParam("email") String userEmail, @RequestParam("username") String userName, @RequestParam("userpassword") String userPassword, Model model) {
+	
+		
+		/*
+		 * System.out.println("userEmail is = " + userEmail);
+		 * System.out.println("userName = " + userName);
+		 * System.out.println("userPassword = " + userPassword);
+		 */
+		
+		User user = new User();
+		user.setEmail(userEmail);
+		user.setUserName(userName);
+		user.setUserPassword(userPassword);
+		
+		System.out.println(user + " ");
+		
+	    model.addAttribute("user",  user);
+		 
+		
+		/*
+		 * User user = new User(); user.setEmail(userName); user.setUserName(userName);
+		 * user.setUserPassword(userPassword);
+		 * 
+		 * System.out.println(user);
+		 */
+		
+		
+		/*
+		 * model.addAttribute("email", userEmail); model.addAttribute("name", userName);
+		 * model.addAttribute("password",userPassword);
+		 */
+		 
+		// now we can use model attribute annotation for this code to make it simple and shorter code 
+		  // by creating entites user name clasas and then create object and pass the value
+			/* model.addAttribute("user", user); */
+		
+		return "success";
+	}
+}

@@ -1,0 +1,20 @@
+package controler;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ContactController {
+	@RequestMapping("/contact")
+	public String showForm() // this is handler class
+		{
+			return "contact";
+		}
+	
+	@RequestMapping(path ="/processform", method=POST)
+	public String handleForm()
+	{
+		return "";
+	}
+	 }
+
