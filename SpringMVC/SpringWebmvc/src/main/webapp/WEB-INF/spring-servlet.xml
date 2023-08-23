@@ -13,5 +13,10 @@ http://www.springframework.org/schema/context/spring-context.xsd"
 <context:component-scan base-package="controller"/>
 
 <bean p:suffix=".jsp" p:prefix="/WEB-INF/views/" name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
-
+<!--We can write the above  code like 
+ <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" name="viewResolver">
+<property name="prefix" value="/WEB-INF/views/"></property>
+ <property name="suffix" value=".jsp"></property>
+</beans>
+ -->
 </beans>
